@@ -5,31 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the Netjumper</title>
     <style>
+        @font-face{
+            font-family: 'ancientmoderntales';
+            src: url(AncientModernTales-a7Po.ttf);
+            font-weight: normal;
+            font-size: normal;
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: midnightblue;
+            background-image: url(background.gif);
+            background-size:cover;
+            background-position: center;
+            cursor: url(Galaxian\ Red.cur), auto;
         }
-        .button {
-            background-color: aliceblue;
+        content{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            color:yellowgreen;
+            font-size: 18px;
+        }
+        button {
+            font-family: 'ancientmoderntales';
+            src: url(AncientModernTales-a7Po.ttf);
+            background-color: black;
             border: none;
-            color: darkorange;
+            color: yellowgreen;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
+            font-size: 20px;
             margin: 4px 2px;
-            cursor: pointer;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease;
         }
         button:hover {
-            background-color: aqua;
+            background-color: rgb(109, 4, 25);
+            cursor: url(Space\ 2.cur) auto;
         }
         button:active {
             transform: scale(0.98);
@@ -71,7 +90,8 @@
                 'https://artpacks.org',
                 'https://www.emotioneric.com/',
                 'http://okuyukashiki.com/',
-                'https://www.cameronsworld.net/'
+                'https://www.cameronsworld.net/',
+                'http://www.rw-designer.com/cursor-library'
             ];
             const randomIndex = Math.floor(Math.random() * links.length);
             window.location.href = links[randomIndex];
